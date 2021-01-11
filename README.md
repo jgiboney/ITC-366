@@ -47,7 +47,7 @@
             aws_access_key_id=QWERTYUIOPASDFGHJKL
             aws_secret_access_key=tHisIsnOtanActUal/Key
             aws_session_token=Vy0suaL4NT1PrSLaPLZAT8fgbNpwhw07ByUvBZ6F0BSITkbUyrIOFUdQu6HDYVhskoQt4OGvTzi0PdLQwvI8FNnMrkESlFxeLSxVy0suaL4NT1PrSLaPLZAT8fgbNpwhw07ByUvBZ6F0BSITkbUyrIOFUdQu6HDYVhskoQt4OGvTzi0PdLQwvI8FNnMrkESlFxeLSxVy0suaL4NT1PrSLaPLZAT8fgbNpwhw07ByUvBZ6F0BSITkbUyrIOFUdQu6HDYVhskoQt4OGvTzi0PdLQwvI8FNnMrkESlFxeLSx
-        ```
+            ```
     - ATTENTION: The token generated renews quickly. Make sure you do not wait too long to start setting up everything, otherwise an error will appear.
 
 - Click the *AWS Console* button to log into the console.
