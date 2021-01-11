@@ -78,8 +78,8 @@
     - check that NAT is setup correctly
         - ```ping google.com```
 - If the above commands do not work for ssh connections, try using the following format instead
-    - ```ssh -i "[publicKey.pem]" [your username]@[your public ipv4 DNS]```
-        - All of the information of your instance can be found on AWS EC2.
+    - All of the information of your instance can be found on AWS EC2.
+        - ```ssh -i "[publicKey.pem]" [your username]@[your public ipv4 DNS]```
     - The command should look something like this:
         - ```ssh -i "my-key.pem" ec2-user@ec2-123-123-123-123.us-east-1.compute.amazonaws.com```
 - Once you are finished, you can use ```terraform destroy``` to remove the entire infrastructure if you want.
