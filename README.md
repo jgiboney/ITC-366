@@ -5,7 +5,7 @@
 - It is highly recommended that you use a Linux or Mac machine to setup the following
 - If you do not have one, you can install a Linux virtual machine inside VMware and setup everything within the vm
 
-#Part One
+# Part One
 
 ## Install AWS Command Line Tool and Terraform
 
