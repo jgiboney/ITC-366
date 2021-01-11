@@ -51,7 +51,7 @@
     - ATTENTION: The token generated renews quickly. Make sure you do not wait too long to start setting up everything, otherwise an error will appear.
 
 - Click the *AWS Console* button to log into the console.
-    - At the top right; ensure the region you are in si *N. Virginia*
+    - At the top right; ensure the region you are in is *N. Virginia*
 
 # Part One Setup
 
@@ -77,6 +77,11 @@
         - ```ssh -f -i my-key.pem ec2-user@123.123.123.123 -L 10000:172.31.129.100:22 sleep 5; ssh -i my-key.pem -p 10000 ec2-user@127.0.0.1```
     - check that NAT is setup correctly
         - ```ping google.com```
+- If the above commands do not work for ssh connections, try using the following format instead
+    - ```ssh -i "[publicKey.pem]" [your username]@[your public ipv4 DNS]```
+        - All of the information of your instance can be found on AWS EC2.
+    - The command should look something like this:
+        - ```ssh -i "my-key.pem" ec2-user@ec2-123-123-123-123.us-east-1.compute.amazonaws.com```
 - Once you are finished, you can use ```terraform destroy``` to remove the entire infrastructure if you want.
 
 # Part Two Setup
