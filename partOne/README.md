@@ -1,11 +1,20 @@
-# it366 setup
+# aws-educate-test
 
-## Linux OR Mac Recommended
+## Linux, Mac, Windows (via WSL)
 
-- It is highly recommended that you use a Linux or Mac machine to setup the following
-- If you do not have one, you can install a Linux virtual machine inside VMware and setup everything within the vm
+- If you run MS Windows, follow the instuctions below to install WSL
+- Terraform is an Infrastructure as Code (IaC) language that allows easy, repeatable creation of infrastructure.
+- The terraform scripts in this repo create:
+    - A DMZ and a Private Subnet
+    - A NAT Instance in the DMZ
+    - A Linux Instance in the Private Subnet
+    - The security groups needed for communication between the instances
 
-#Part One
+## Setting Up Windows with Windows Subsystem for Linux (WSL)
+
+- Enable [WSL](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
+- Install *Ubuntu 18.04 LTS* from the Microsoft Store
+    - You will be asked for a Username and Password; this does not need to be the same as your Windows username/password
 
 ## Install AWS Command Line Tool and Terraform
 
@@ -74,3 +83,4 @@
     - check that NAT is setup correctly
         - ```ping google.com```
 - Once you are finished, you can use ```terraform destroy``` to remove the infrastructure.
+
