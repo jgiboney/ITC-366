@@ -10,7 +10,7 @@
 ## Install AWS Command Line Tool and Terraform
 
 - Open Command Prompt in Ubuntu - or your command prompt on Linux/Mac
-- Add unzip
+- Add unzip (it is already installed on Mac)
     - ```sudo apt install unzip -y```
 - Install [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-linux.html)
     - ```curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"```
