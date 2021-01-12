@@ -59,7 +59,7 @@
 
 - ```mkdir ~/GitRepos```
 - ```cd ~/GitRepos```
-- ```git clone https://github.com/dwen2/it366.git```
+- ```git clone https://github.com/jgiboney/ITC-366.git```
 - ```cd partOne```
 - ```terraform init```
 - ```terraform apply```
