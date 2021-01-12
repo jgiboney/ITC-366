@@ -129,3 +129,5 @@ source_dest_check = false
 
 ## Resources for Mac users
 - https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-mac.html
+- https://www.terraform.io/downloads.html
+
