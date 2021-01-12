@@ -28,8 +28,7 @@
 - Install [Terraform](https://www.terraform.io/downloads.html)
     - ```curl "https://releases.hashicorp.com/terraform/0.14.4/terraform_0.14.4_linux_amd64.zip" -o "terraform.zip"```
     - ```unzip terraform.zip```
-    - ```mkdir -p ~/.local/bin```
-    - ```mv terraform ~/.local/bin/terraform```
+    - ```mv terraform /usr/local/bin/terraform```
     - ```terraform --version```
 
 ## Logging in to AWS Educate and Get the Keys
