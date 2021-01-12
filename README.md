@@ -115,13 +115,13 @@
 - Security Groups
     - 101 and 102 can only talk to the router
 
-- Turn on IP Forwarding on the router
+- Turn on IP Forwarding on the router (SSH into the router)
 ```
 echo 'net.ipv4.ip_forward=1' | sudo tee -a /etc/sysctl.conf
 sysctl -p /etc/sysctl.conf
 ```
 
-- Add routes to the route tables in the clients
+- Add routes to the route tables in the clients (SSH into the clients)
 ```
 sudo route add -net 172.31.10x.0 netmask 255.255.255.0 gw 172.31.y.z
 ```
