@@ -28,7 +28,7 @@
 - Install [Terraform](https://www.terraform.io/downloads.html)
     - ```curl "https://releases.hashicorp.com/terraform/0.14.4/terraform_0.14.4_linux_amd64.zip" -o "terraform.zip"```
     - ```unzip terraform.zip```
-    - ```mv terraform /usr/local/bin/```
+    - ```sudo mv terraform /usr/local/bin/```
     - ```terraform --version```
 
 ## Logging in to AWS Educate and Get the Keys
@@ -59,7 +59,7 @@
 - ```mkdir ~/GitRepos```
 - ```cd ~/GitRepos```
 - ```git clone https://github.com/jgiboney/ITC-366.git```
-- ```cd partOne```
+- ```cd ITC-366/partOne```
 - ```terraform init```
 - ```terraform apply```
 - Accept the changes ```yes```
