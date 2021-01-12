@@ -121,7 +121,7 @@ echo 'net.ipv4.ip_forward=1' | sudo tee -a /etc/sysctl.conf
 sysctl -p /etc/sysctl.conf
 ```
 
-- Add routes to the route tables in the clients (SSH into the clients)
+- Add routes to the route tables in the clients (SSH into the clients). Change the x, y, and z depending on the client and instance.
 ```
 sudo route add -net 172.31.10x.0 netmask 255.255.255.0 gw 172.31.y.z
 ```
