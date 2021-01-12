@@ -1,8 +1,8 @@
 # it366 setup
 
-## Linux OR Mac Recommended
+## Linux Recommended
 
-- It is highly recommended that you use a Linux or Mac machine to setup the following
+- It is highly recommended that you use a Linux machine to setup the following
 - If you do not have one, you can install a Linux virtual machine inside VMware and setup everything using the vm
 
 # Pre-requisites
