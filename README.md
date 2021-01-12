@@ -126,3 +126,6 @@ sudo route add -net 172.31.10x.0 netmask 255.255.255.0 gw 172.31.y.z
 source_dest_check = false
 ```
 - Once you are finished, you can use ```terraform destroy``` to remove the entire infrastructure.
+
+## Resources for Mac users
+- https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-mac.html
