@@ -136,3 +136,6 @@ source_dest_check = false
 - https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-mac.html
 - https://www.terraform.io/downloads.html
 
+- For Mac Terraform install. Download the above terraform download then move the terraform file to /usr/local/bin
+
+
