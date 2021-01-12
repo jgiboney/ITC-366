@@ -9,6 +9,7 @@
 
 ## Install AWS Command Line Tool and Terraform
 
+### Linux
 - Open Command Prompt in Ubuntu - or your command prompt on Linux/Mac
 - Add unzip (it is already installed on Mac)
     - ```sudo apt install unzip -y```
@@ -30,6 +31,10 @@
     - ```unzip terraform.zip```
     - ```sudo mv terraform /usr/local/bin/```
     - ```terraform --version```
+
+### Windows
+- Install AWS CLI (https://awscli.amazonaws.com/AWSCLIV2.msi)
+- 
 
 ## Logging in to AWS Educate and Get the Keys
 
