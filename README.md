@@ -115,6 +115,7 @@
 - Security Groups
     - 101 and 102 can only talk to the router
 
+### Try the following if your machines cannot ping each other
 - Turn on IP Forwarding on the router (SSH into the router)
 ```
 echo 'net.ipv4.ip_forward=1' | sudo tee -a /etc/sysctl.conf
