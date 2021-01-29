@@ -56,6 +56,9 @@
 
 - Click the *AWS Console* button to log into the console.
     - At the top right; ensure the region you are in is *N. Virginia*
+    
+- Setting credentials in Windows
+https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html
 
 # Part One Setup
 
