@@ -9,11 +9,13 @@ resource "aws_instance" "linux101" {
   associate_public_ip_address = true
   key_name                    = aws_key_pair.generated_key.key_name
   vpc_security_group_ids      = [aws_security_group.FROM101.id, aws_security_group.SSH2.id]
-  user_data                   = <<-EOF
-    #!/bin/bash
-    sudo yum update -y && sudo yum upgrade -y
-    sudo route add -net 172.31.102.0 netmask 255.255.255.0 gw ${element(tolist(aws_network_interface.public-101.private_ips), 0)}
-  EOF
+  user_data                   = <<EOF
+#cloud-config
+
+runcmd:
+  - yum update -y && yum upgrade -y
+  - route add -net 172.31.102.0 netmask 255.255.255.0 gw ${element(tolist(aws_network_interface.public-101.private_ips), 0)}
+EOF
 }
 
 ############ PUBLIC-102 INSTANCE ############
@@ -27,11 +29,13 @@ resource "aws_instance" "linux102" {
   associate_public_ip_address = true
   key_name                    = aws_key_pair.generated_key.key_name
   vpc_security_group_ids      = [aws_security_group.FROM102.id, aws_security_group.SSH2.id]
-  user_data                   = <<-EOF
-    #!/bin/bash
-    sudo yum update -y && sudo yum upgrade -y
-    sudo route add -net 172.31.101.0 netmask 255.255.255.0 gw ${element(tolist(aws_network_interface.public-102.private_ips), 0)}    
-  EOF
+  user_data                   = <<EOF
+#cloud-config
+
+runcmd:
+  - yum update -y && yum upgrade -y
+  - route add -net 172.31.101.0 netmask 255.255.255.0 gw ${element(tolist(aws_network_interface.public-102.private_ips), 0)} 
+EOF
 }
 
 ############ OUTPUT CONNECTION INFO ############
